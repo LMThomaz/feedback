@@ -1,17 +1,51 @@
 import { SubmitFeedbackUseCase } from './submit-feedback-use-case';
 
+const createFeedbackSpy = jest.fn();
+const sendMailSpy = jest.fn();
+
+const submitFeedback = new SubmitFeedbackUseCase(
+  { create: createFeedbackSpy },
+  { sendMail: sendMailSpy },
+);
+
 describe('Submit feedback', () => {
   it('should be able to submit a feedback', async () => {
-    const submitFeedback = new SubmitFeedbackUseCase(
-      { create: async () => {} },
-      { sendMail: async () => {} },
-    );
     await expect(
       submitFeedback.execute({
         type: 'BUG',
         comment: 'This is a bug',
-        screenshot: 'test.png',
+        screenshot: 'data:image/png;base64,aoiweu',
       }),
     ).resolves.not.toThrow();
+
+    expect(createFeedbackSpy).toHaveBeenCalled();
+    expect(sendMailSpy).toHaveBeenCalled();
+  });
+  it('should not be able submit feedback without type', async () => {
+    await expect(
+      submitFeedback.execute({
+        type: '',
+        comment: 'This is a bug',
+        screenshot: 'data:image/png;base64,aoiweu',
+      }),
+    ).rejects.toThrow();
+  });
+  it('should not be able submit feedback without comment', async () => {
+    await expect(
+      submitFeedback.execute({
+        type: 'BUG',
+        comment: '',
+        screenshot: 'data:image/png;base64,aoiweu',
+      }),
+    ).rejects.toThrow();
+  });
+  it('should not be able submit feedback with an invalid screenshot', async () => {
+    await expect(
+      submitFeedback.execute({
+        type: 'BUG',
+        comment: 'tudo bugado',
+        screenshot: 'photo.png',
+      }),
+    ).rejects.toThrow();
   });
 });

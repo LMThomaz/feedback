@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1651865008262" clover="3.2.0">
-  <project timestamp="1651865008262" name="All files">
-    <metrics statements="28" coveredstatements="28" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2" elements="32" coveredelements="32" complexity="0" loc="28" ncloc="28" packages="1" files="1" classes="1"/>
+<coverage generated="1651866323432" clover="3.2.0">
+  <project timestamp="1651866323432" name="All files">
+    <metrics statements="32" coveredstatements="32" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2" elements="41" coveredelements="41" complexity="0" loc="32" ncloc="32" packages="1" files="1" classes="1"/>
     <file name="submit-feedback-use-case.ts" path="C:\dev\feedback\server\src\use-cases\submit-feedback-use-case.ts">
-      <metrics statements="28" coveredstatements="28" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <metrics statements="32" coveredstatements="32" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
@@ -19,11 +19,11 @@
       <line num="13" count="1" type="stmt"/>
       <line num="14" count="1" type="stmt"/>
       <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
-      <line num="16" count="1" type="stmt"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="18" count="1" type="stmt"/>
-      <line num="19" count="1" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
+      <line num="16" count="4" type="stmt"/>
+      <line num="17" count="4" type="cond" truecount="1" falsecount="0"/>
+      <line num="18" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="4" type="cond" truecount="1" falsecount="0"/>
+      <line num="20" count="4" type="cond" truecount="1" falsecount="0"/>
       <line num="21" count="1" type="stmt"/>
       <line num="22" count="1" type="stmt"/>
       <line num="23" count="1" type="stmt"/>
@@ -32,6 +32,10 @@
       <line num="26" count="1" type="stmt"/>
       <line num="27" count="1" type="stmt"/>
       <line num="28" count="1" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
