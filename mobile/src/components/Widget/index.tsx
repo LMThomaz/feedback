@@ -32,9 +32,7 @@ function Widget() {
         snapPoints={[1, 280]}
         backgroundStyle={styles.modal}
         handleIndicatorStyle={styles.indicator}>
-        {/* <Options /> */}
-        {/* <Form feedbackType='BUG' /> */}
-        <Success />
+        <Form feedbackType='BUG' />
       </BottomSheet>
     </>
   );
