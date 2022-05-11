@@ -1,0 +1,30 @@
+import { theme } from './../../theme/index';
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+  container: {
+    paddingHorizontal: 24,
+    alignItems: 'center',
+  },
+  header: {
+    flexDirection: 'row',
+    marginVertical: 16,
+  },
+  titleContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingRight: 24,
+  },
+  titleText: {
+    fontSize: 20,
+    color: theme.colors.text_primary,
+    fontFamily: theme.fonts.medium,
+  },
+  image: {
+    width: 24,
+    height: 24,
+    marginRight: 8,
+  },
+});
