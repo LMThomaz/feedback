@@ -1,9 +1,15 @@
 import React from 'react';
-import { ActivityIndicator, Text, TouchableOpacity, View } from 'react-native';
+import {
+  ActivityIndicator,
+  Text,
+  TouchableOpacity,
+  TouchableOpacityProps,
+  View,
+} from 'react-native';
 import { theme } from '../../theme';
 import { styles } from './styles';
 
-interface Props extends TouchableOpacity {
+interface Props extends TouchableOpacityProps {
   isLoading: boolean;
 }
 
