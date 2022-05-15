@@ -16,34 +16,48 @@
     <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1">
   </a>
 
-  <a href="https://github.com/LMThomaz-Study/feedback/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/LMThomaz-Study/feedback">
-  </a>
-
   <img alt="License" src="https://img.shields.io/github/license/LMThomaz-Study/feedback">
 </p>
 
-## :mag: Sobre o projeto
+## 💻 Projeto
 
-Ferramenta para enviar seu problema, sugestão ou alguma coisa que você acha que poderia ser melhorado em sua aplicação.
-Desenvolvido durante a Next Level Week, oferecida pela [Rocketseat :rocket:][url-rocketseat] na verão **Impulse** :coffee:  
-O NLW detêm muito conteúdo prático, desafios e hacks onde o conteúdo fica disponível durante uma semana.
+Widget para utilizar em seus projeto para auxiliar com feedbacks. Tenha feedbacks mais rápidos e intuitivos para seu usuário.
 
-## :art: O protótipo?
+## :art: Protótipo
 
-O layout da aplicação está disponível no [Figma][url-figma]  
-![Capa Ecoleta](.github/capa.png)
+O layout da aplicação está disponível através [desse link][url-figma] do Figma.  
+![Capa Feedback](.github/capa.png)
 
 ## :hammer: Tecnologias?
 
-O projeto utiliza as seguintes ferramentas:
+### 🖥️ Front-end
 
-- [TypeScript][url-ts]
-- [NodeJS][url-node]
-- [Prisma][url-prisma]
-- [React][url-react]
-- [React Native][url-react-native]
-- [Expo][url-expo]
+- [x] TypeScript
+- [x] React
+- [x] TailwindCSS
+- [x] Axios
+- [x] Phosphor React
+- [x] HeadlessUI
+
+### 💽 Back-end
+
+- [x] NodeJS
+- [x] Prisma
+- [x] Jest
+- [x] NodeMailer
+- [x] Express
+
+### 📱 Mobile
+
+- [x] React Native
+- [x] Expo
+  - [x] Google Fonts - Inter
+  - [x] App Loading
+- [x] React Native SVG
+- [x] React Native Reanimated
+- [x] React Native IPhone X Helper
+- [x] React Native Gesture Handler
+- [x] Gorhom - Bottom Sheet
 
 ## :electric_plug: Como usar?
 
@@ -143,6 +157,7 @@ Feito com 💜 por <a href="https://www.linkedin.com/in/leonardo-thomaz/" target
 [url-npm]: https://www.npmjs.com/
 [url-yarn]: https://yarnpkg.com/
 [url-prisma]: https://www.prisma.io/
+[url-tailwind]: https://tailwindcss.com/
 [diego]: https://github.com/diego3g
 [rodrigo]: https://github.com/rodrigorgtic
 [license]: https://github.com/LMThomaz-Study/feedback/blob/master/LICENSE.md
